@@ -1,0 +1,69 @@
+.filter-block {
+	margin-top: 15px;
+	border: 1px solid #eee;
+	padding: 5px 5px;
+}
+.filter-list {
+	display: flex;
+	fles-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.filter-item {
+	padding: 10px;
+	flex: 1 1;
+}
+
+.filter-item input[type='radio'] {
+	display: none;
+}
+
+.filter-item label {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+
+
+.filter__all + label {
+	color: #777;
+	border-color: #777;
+}
+.filter__normal + label {
+	color: #5B1;
+	border-color: #5B1;
+}
+.filter__important + label {
+	color: #F80;
+	border-color: #F80;
+}
+.filter__fatality + label {
+	color: #F55;
+	border-color: #F55;
+}
+
+
+.filter__all:checked + label {
+	background-color: #777;
+	color: #fff;
+
+}
+.filter__normal:checked + label {
+	background-color: #5B1;
+	color: #fff;
+
+}
+.filter__important:checked + label {
+	background-color: #F80;
+	color: #fff;
+
+}
+.filter__fatality:checked + label {
+	background-color: #F55;
+	color: #fff;
+
+}

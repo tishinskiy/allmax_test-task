@@ -1,0 +1,105 @@
+.task-list--block {
+}
+.task-list {
+	margin-top: 30px;
+	border: 1px solid #eee;
+}
+.task-list--header > div {
+	padding: 0 10px;
+	font-size: 12px;
+	color: #555;
+}
+
+.task-list--header,
+.task-list--item {
+	display: flex;
+	flex-flow: row nowrap;
+	padding: 10px 0;
+	align-items: flex-start;
+}
+
+.task-list--item:nth-child(even) {
+	background: #eee;
+}
+
+.task-list--item__overdue {
+	border:1px solid #FF1200FF;
+}
+.task-list--item__overdue +
+.task-list--item__overdue {
+	border-top: 0;
+}
+
+.task-list--item__complited > * {
+	opacity: 0.3;
+}
+
+.task-list--item > div {
+	padding: 10px;
+	/*border-right: 1px solid #ccc*/
+}
+
+.task-item--check {
+	flex-basis: 33px;
+}
+.task-item--name {
+	flex: 1 0;
+}
+
+.task-item--name a {
+	color: #000;
+
+}
+
+.task-item--priority {
+	flex-basis: 90px;
+	text-align: center;
+	/*padding: 10px;*/
+}
+
+.task-item--priority__normal {
+	color: #5B1;
+	/*color: #fff;*/
+}
+.task-item--priority__important {
+	color: #F80;
+	/*color: #fff;*/
+}
+.task-item--priority__fatality {
+	color: #F55;
+	/*color: #fff;*/
+}
+
+
+.task-item--complite {
+	text-align: right;
+	flex-basis: 150px;
+
+}
+.task-item--deadline {
+	flex-basis: 150px;
+	text-align: center;
+}
+
+.task-item--action {
+	flex-basis: 90px;
+	text-align: right;
+}
+
+.task-item--action button {
+	margin-top: -10px;
+	margin-bottom: -10px;
+}
+
+.add-task--block {
+	margin-top: 25px;
+}
+
+.add-task-button {
+	display: block;
+	width: 100%;
+	background: #4B4;
+	color: #fff;
+	padding: 15px;
+
+}

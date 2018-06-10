@@ -1,0 +1,174 @@
+.task-form {
+	/*margin-top: 25px;*/
+}
+
+.task-form--block {
+	margin-top: 20px;
+}
+.task-form--block > p {
+	margin-bottom: 5px;
+}
+.task-form--block__name {}
+
+.task-form--block__desc textarea,
+.task-form--block__name input{
+	width: 100%;
+	padding: 10px 15px;
+	margin-top: 5px;
+	border: 1px solid #ccc;
+	outline: none;
+	font-size: 15px;
+	color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.task-form--block__desc {
+
+}
+
+.task-form--block__desc textarea {
+	height: 120px;
+	line-height: 1.5em;
+}
+
+.task-desc {
+	line-height: 1.5em;
+	color: #777;
+}
+
+.task-form--block__priority {
+
+}
+
+.task-button--list,
+.deadline-block,
+.priority-item--wrap,
+.priority-list {
+	display:flex;
+	flex-flow: row nowrap;
+	margin-left: -5px;
+	margin-right: -5px;
+	align-items: center;
+	font-size: 16px;
+}
+
+.priority-item {
+	flex: 0 0 120px;
+	padding: 0 5px;
+}
+
+.priority-header {
+	flex: 0 0 145px;
+	padding: 0 5px;
+}
+
+.priority-item input[type="radio"] {
+	display: none;
+}
+
+.priority-item input[type="radio"] + label {
+	display: block;
+	text-align: center;
+	padding: 10px 15px;
+	color: #000;
+	opacity: 0.5;
+	cursor: pointer;
+}
+.priority-item input[type="radio"] + label:hover {
+
+	opacity: 0.75;
+}
+.priority-item input[value="normal"] + label {
+	background: #98CD27;
+}
+.priority-item input[value="fatality"] + label {
+	background: #FF5555;
+}
+.priority-item input[value="important"] + label {
+	background: #FF8800;
+}
+.priority-item input[type="radio"]:checked + label {
+	opacity: 1;
+	box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	position: relative;
+	top: -2px;
+}
+
+.task-form--block__deadline {
+
+}
+
+.deadline-block {
+	margin-left: 0;
+}
+.deadline-header {
+	flex: 0 0 125px;
+	padding: 0 5px;
+}
+
+.deadline__overdue {
+	color: #FF5555;
+}
+
+.react-datepicker-wrapper input {
+	width: 160px;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	outline: none;
+	font-size: 15px;
+	color: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.task-form--block__buttons {
+
+}
+
+.dtp-wrap {
+	display: none;
+}
+
+#dlCheck:checked + .deadline-header + .dtp-wrap {
+	display: block
+}
+
+
+.task-button--list {
+}
+
+.task-button--item {
+	padding: 0 5px;
+
+}
+
+.task-button--list .task-button--item:last-child {
+	flex-grow: 1;
+	text-align: right;
+}
+
+.button {
+	padding: 10px 20px;
+	color: #fff;
+}
+
+.button__save {
+	background: #98CD27;
+}
+.button__clear {
+	background: #bbb;
+}
+.button__edit {
+	background: #FF8800;
+}
+.button__revert {
+	background: #FF5555;
+}
+.button__back {
+	background: #48D;
+}
+.button__dell {
+	background: #222;
+}
